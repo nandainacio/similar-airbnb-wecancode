@@ -1,0 +1,238 @@
+* {
+    padding:0;
+    margin:0;
+    list-style:none;
+    border:0
+    
+
+}
+
+body{
+    
+    background-color: rgb(254,198,63);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.cabecalho{
+    
+    background-color: rgb(254,198,63);
+    padding: 30px;
+    color:rgb(121, 2, 177);
+    font-weight: bold;
+}
+
+.titulo, .texto-titulo{
+    text-align: center;
+}
+
+section{
+    background-color:rgb(121,2,177);
+ 
+    
+   
+}
+.pesquisaReserva h1{
+    color:rgb(254,198,63);
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+label{
+    color:rgb(254,198,63);
+    font-weight: bold;
+    margin-left: 40px;
+}
+input#estadosEscolha{
+    margin-left: 40px;
+    background-color:rgb(254,198,63);
+}
+
+input#cidades{
+    background-color:rgb(254,198,63);
+}
+input#botao{
+    background-color:rgb(254,198,63);
+    border-radius: 10PX;
+    color: rgb(121, 2, 177);
+    width: 100px;
+    height: 20px;
+    border: none;
+    outline: none;
+    margin-bottom: 30px;
+}
+input#botaoData{
+    background-color:rgb(254,198,63);
+    border-radius: 10PX;
+    color: rgb(121, 2, 177);
+    width: 100px;
+    height: 20px;
+    border: none;
+    outline: none;
+    margin-bottom: 30px;
+}
+
+h3{
+    margin-left: 40px;
+    color:rgb(254,198,63);
+    margin-bottom: 15px;
+}
+
+h2{
+    color: rgb(254,198,63);
+    margin-left: 40px;
+    margin-bottom: 15px;
+
+
+}
+.date{
+    
+    margin-left: 40px;
+    background-color:rgb(254,198,63);
+    margin-bottom: 50px;
+
+}
+.escondido{
+    display: none;
+}
+
+.feedCards section{
+    display: flex;
+    
+    /*background-color: rgb(254,198,63);*/
+    
+}
+
+.card{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    flex-direction: row;
+    margin: 50px;
+    margin-left: 120px;
+    background-color: rgb(254,198,63);
+    margin-bottom: 100px;
+
+}
+.card-info{
+    color: rgb(121,2,177);
+    position: absolute;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 310px;
+    border-radius: 10px;
+    font-weight: bolder;  
+}
+
+.card-img{
+    display: flex;
+   background-color: rgb(254,198,63);
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 840px){
+
+    .card-img{
+       
+        width: 200px;
+        height: 200px;
+       
+    }
+}
+
+@media screen and (max-width: 739px){
+
+    .card-img{
+       
+        width: 150px;
+        height: 150px;
+       
+    }
+
+    input#estadosEscolha{
+        margin-left: 40px;
+        background-color:rgb(254,198,63);
+        width: 100px;
+    }
+
+    input#cidades{
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 639px){
+    .card-img{
+       
+        width: 300px;
+        height: 300px;
+    }
+
+    .card-info{
+       
+        margin-top: 360px;
+        
+    }
+
+}
+
+@media screen and (max-width: 570px){
+
+    input{
+        display: block;
+        margin-bottom: 20px;
+     
+    }
+
+    input#estadosEscolha{
+        width: 150px;
+    }
+    input#cidades{
+        margin-left: 40px;
+        width: 150px;
+    }
+    
+    input#botao, input#botaoData{
+        margin-left: 40px;
+    }
+    
+    .date{
+    
+        margin-bottom: 20px;
+    }
+
+   section{
+       padding-bottom: 20px;
+   }
+}
+
+@media screen and (max-width: 420px){
+    h1{
+        font-size: 26px;
+    }
+
+ 
+    section{
+        
+        font-size: 10px;
+        width: 100%;
+    }
+
+    .card{
+        margin-left: 70px;
+    }
+    
+}
+
+@media screen and (max-width: 367px){
+   section{
+       width: 100%;
+    }
+
+    .card{
+        margin-left: 40px;
+    }
+}

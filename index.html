@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ReservasOn</title>
+</head>
+<body>
+    <header class="cabecalho">
+        
+        <h1 class="titulo">ReservasOn</h1>
+       
+        <p class="texto-titulo">Seu quarto sempre disponível, em qualquer lugar no Brasil</p>
+       
+    </header>
+    <section class="pesquisaReserva">
+        <h2 class="txt-pesquisa">Vamos pesquisar seu quarto?</h2>
+
+        <label class="estado">Estado: </label>
+        <input list="estados" id="estadosEscolha" name="estadosEscolha">
+
+        <datalist id="estados">
+            <option value="Acre"></option>
+            <option value="Alagoas"></option>
+            <option value="Amapá"></option>
+            <option value="Amazonas"></option>
+            <option value="Bahia"></option>
+            <option value="Ceará"></option>
+            <option value="Distrito Federal"></option>
+            <option value="Espírito Santo"></option>
+            <option value="Goiás"></option>
+            <option value="Maranhão"></option>
+            <option value="Mato Grosso"></option>
+            <option value="Mato Grosso do Sul"></option>
+            <option value="Minas Gerais"></option>
+            <option value="Pará"></option>
+            <option value="Paraíba"></option>
+            <option value="Paraná"></option>
+            <option value="Pernambuco"></option>
+            <option value="Piauí"></option>
+            <option value="Rio de Janeiro"></option>
+            <option value="Rio Grande do Norte"></option>
+            <option value="Rio Grande do Sul"></option>
+            <option value="Rondônia"></option>
+            <option value="Roraima"></option>
+            <option value="Santa Catarina"></option>
+            <option value="São Paulo"></option>
+            <option value="Sergipe"></option>
+            <option value="Tocantins"></option>
+        </datalist>
+
+        <label class="cidade">Cidade: </label>
+        <input type="text" id="cidades" name="cidades">
+
+        <input type="button" id="botao" value="Confirmar" onclick="confirmarCidade()"/>
+        <br>
+        <h3 class="escondido" id="titData">Escolha a sua data</h3>
+        <input type="date" class="date escondido" id="data">
+        <input type="button" id="botaoData" class="escondido" value="Confirmar" onclick="confirmarData()"/>
+    </section>
+    <section id="feedCards">
+        
+    </section>
+
+    <main>
+        <div class="list" id="list"></div>
+        <div class="pageNumbers" id="pagination"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
